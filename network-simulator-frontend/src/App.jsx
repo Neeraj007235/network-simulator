@@ -17,6 +17,11 @@ const links = [
   { from: 'D', to: 'E', capacity: 100 },
 ];
 
+const API_BASE =
+  import.meta.env.MODE === 'development'
+    ? 'http://localhost:5000/api'
+    : '/api';
+
 function App() {
   const [state, setState] = useState({
     queues: {},
@@ -29,7 +34,7 @@ function App() {
     let interval;
     if (loading) {
       interval = setInterval(() => {
-        axios.get('http://localhost:5000/api/state')
+        axios.get(`${API_BASE}/state`)
           .then(res => setState(res.data))
           .catch(err => console.error(err));
       }, 1000);
@@ -40,7 +45,7 @@ function App() {
   // Start simulation
   const startSimulation = () => {
     setLoading(true);
-    axios.post('http://localhost:5000/api/start')
+    axios.post(`${API_BASE}/start`)
       .then(() => {
         console.log('Simulation started');
       })

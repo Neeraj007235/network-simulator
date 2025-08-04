@@ -1,0 +1,13 @@
+{
+  "name": "network-simulator",
+  "version": "1.0.0",
+  "description": "A simple web-based network traffic simulator for visualizing data packet flow between interconnected nodes (like routers/switches) in a telecom network.  \r Built with Node.js (backend) and React.js (frontend).",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm install --prefix network-simulator-backend && npm install --prefix network-simulator-frontend && npm run build --prefix network-simulator-frontend",
+    "start": "npm run start --prefix network-simulator-backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
