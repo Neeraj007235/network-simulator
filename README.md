@@ -6,7 +6,7 @@ Built with Node.js (backend) and React.js (frontend).
 
 ---
 
-## 🚀 Features
+## 🔮 Features
 
 - Simulates a network with 5 nodes (A, B, C, D, E)
 - Each node generates data packets based on defined traffic rates
@@ -18,6 +18,12 @@ Built with Node.js (backend) and React.js (frontend).
   - Link usage
   - Node queue lengths
   - Traffic statistics
+
+---
+
+## 🚀 Live Preview
+
+You can view the live preview of the project [here](https://network-simulator-m9ij.onrender.com).
 
 ---
 
