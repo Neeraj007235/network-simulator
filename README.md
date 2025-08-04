@@ -37,20 +37,34 @@ Built with Node.js (backend) and React.js (frontend).
 ```bash
 git clone https://github.com/Neeraj007235/network-simulator.git
 ```
-2. **Start the servers:**
+
+2. **Create .env file:**
+   Inside the Backend directories create `.env` and set:
+
+   Backend:
+
+   ```bash
+   PORT = 5000
+   NODE_ENV = development
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install     # Run in both Frontend and Backend directories
+   ```
+
+4. **Start the servers:**
    Frontend:
    ```bash
    cd network-simulator-frontend
-   npm install
-   npm start
+   npm run dev
    ```
    Backend:
    ```bash
    cd network-simulator-backend
-   npm install
-   node index.js
+   npm run dev
    ```
-3. **Access the application:**
+5. **Access the application:**
    ```bash
    http://localhost:5173/
    ```

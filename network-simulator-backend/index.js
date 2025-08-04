@@ -1,10 +1,12 @@
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import simulationRoutes from './routes/simulationRoutes.js';  // <-- note the .js extension
-import path from "path";
+import path from 'path';
 
+dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const __dirname = path.resolve();
 
 app.use(cors());

@@ -1,4 +1,3 @@
-// src/components/NetworkGraph.js
 import React from 'react';
 
 const NetworkGraph = ({ nodes, links, linkUsage }) => {

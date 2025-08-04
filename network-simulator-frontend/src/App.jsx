@@ -1,10 +1,9 @@
-// src/App.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import NetworkGraph from './components/NetworkGraph';
 import NodeInfo from './components/NodeInfo';
-import LinkInfo from './components/LinkInfo';
+import LinkUsageChart from './components/LinkUsageChart';
 
 import './styles.css';
 
@@ -72,7 +71,7 @@ function App() {
             <NodeInfo queues={state.queues} />
           </div>
           <div className="info-card">
-            <LinkInfo links={links} linkUsage={state.linkUsage} />
+            <LinkUsageChart links={links} linkUsage={state.linkUsage} />
           </div>
         </div>
       </div>

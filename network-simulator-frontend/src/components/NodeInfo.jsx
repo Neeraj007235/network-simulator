@@ -1,4 +1,3 @@
-// src/components/NodeInfo.js
 import React from 'react';
 
 const NodeInfo = ({ queues }) => {

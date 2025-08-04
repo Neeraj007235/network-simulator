@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -12,7 +13,9 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "network-simulator": "file:.."
+    "network-simulator": "file:..",
+    "nodemon": "^3.1.10"
   }
 }
